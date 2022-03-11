@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar"><head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Good Vibes 👻 </title>
+  <link rel="stylesheet" href="ads1.css">
+
+  <style>
+.bg{
+    background:purple 50% no-repeat url(back-pool.jpg); 
+    background-size:cover;
+    -webkit-animation:30s linear infinite
+    a;animation:30s linear infinite 
+    a;background-size:cover;
+    height:100%;left:0;
+    position:absolute;
+    top:0;
+    width:calc(100vw + 500px)}
+    .button{
+        background-color: purple; /* Green */
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        cursor:pointer;
+      }
+</style>
+    </head>
+
+<body>
+ 
+  <div class="wrap">
+    <div class="bg"></div>
+    <div class="content">
+      <div class="content__l1" style="margin-bottom:55px !important;;">
+        <div class="content__s content__s_active">😎 You Have A Big Chance , To Change Your Life </div>
+      </div>
+            <div class="content__l3">
+                <div class="content__s content__s_active content__s_1">هل سبق لك أن حصلت على <span class=content__highlight>أموال</span> عبر الإنترنت؟ <div class="content__buttons">
+            <button type="button" class="content__button content__button_yes content__button_go" data-step="1">YEAP </button> &nbsp;
+            <button type="button" class="content__button content__button_no content__button_go" data-step="1">Nop</button>
+          </div>
+        </div>
+
+        <div class="content__s content__s_2">؟ <span class=content__highlight>$250,000</span> ماذا ستفعل مع          <div class="content__buttons" style="max-width:600px;">
+            <button type="button" class="content__button content__button_no content__button_go" data-step="2">سداد الديون</button> &nbsp;
+            <button type="button" class="content__button content__button_no content__button_go" data-step="2">شراء منزل</button> &nbsp;
+            <button type="button" class="content__button content__button_no content__button_go" data-step="2">السفر</button> &nbsp;
+            <button type="button" class="content__button content__button_no content__button_go" data-step="2">كل ما سبق!</button>
+          </div>
+        </div>
+
+        <div class="content__s content__s_3">هل ترغب في معرفة كيفية التداول <span class=content__highlight>الخيارات الثنائية</span>؟ <div class="content__buttons" style="max-width:600px;">
+            <button type="button" class="content__button content__button_no content__button_go" data-step="3">نعم فعلا</button> &nbsp;
+            <button type="button" class="content__button content__button_no content__button_go" data-step="3">لا</button>
+          </div>
+        </div>
+                <div class="content__s content__s_4">
+          يرجى الانتظار حتى نحدد أهليتك          <br />
+          تهانينا! أنت مؤهل! انقر على الزر أدناه للمتابعة          <br />
+          <a href="https://nicsorts-accarade.com/click/1"  onclick="launchext();" target="_blank" ><button type="button" class="button">استمر</button></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+ 
+    <style>
+     
+    </style>
+    <script  src="https://code.jquery.com/jquery-1.12.4.min.js" crossorigin="anonymous"></script>
+    <script>
+    $( document ).ready(function() {
+      $(".content__button_go").on("click", function() {
+        $(".content__s_" + $(this).data("step")).slideUp({
+          duration: 500,
+          start: function() {},
+          complete: function() {
+            $(this).removeClass("content__s_active").removeAttr("style")
+          }
+        }), $(".content__s_" + ($(this).data("step") + 1)).slideDown({
+          duration: 500,
+          start: function() {},
+          complete: function() {
+            $(this).addClass("content__s_active").removeAttr("style")
+          }
+        })
+      });
+      
+    });
+    </script>
+
+ 
+
+</body>
+</html>
